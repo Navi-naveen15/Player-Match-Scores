@@ -6,6 +6,7 @@ const sqlite3 = require("sqlite3");
 const app = express();
 
 const dbPath = path.join(__dirname, "cricketMatchDetails.db");
+app.use(express.json());
 
 let db = null;
 
